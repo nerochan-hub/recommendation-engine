@@ -1,0 +1,35 @@
+body {
+    background: #f9fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin-top: 60px;
+    max-width: 700px;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #343a40;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(45deg, #0062cc, #00a2d3);
+    transform: translateY(-2px);
+}
