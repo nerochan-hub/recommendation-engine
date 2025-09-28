@@ -1,4 +1,85 @@
+/* Base Styles */
 body {
+  background: linear-gradient(to right, #F2FDFF, #7BBBFF);
+  font-family: 'Poppins', sans-serif;
+  color: #050F2A;
+  min-height: 100vh;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 18px;
+  background: #F2FDFF;
+  border: 1px solid #E0E6F1;
+  box-shadow: 0 6px 18px rgba(5, 15, 42, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(5, 15, 42, 0.25);
+}
+
+/* Headings */
+h1, h2 {
+  font-weight: 700;
+  color: #050F2A;
+}
+
+/* Buttons */
+.btn-custom {
+  background: linear-gradient(45deg, #7BBBFF, #B8A9FF);
+  border: none;
+  color: #050F2A;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 12px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(5, 15, 42, 0.2);
+}
+
+/* Apply Button inside results */
+.apply-btn {
+  background: linear-gradient(45deg, #050F2A, #7BBBFF);
+  color: #F2FDFF;
+}
+
+.apply-btn:hover {
+  background: linear-gradient(45deg, #7BBBFF, #B8A9FF);
+  color: #050F2A;
+}
+
+/* Animations for Internship Cards */
+.internship-card {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Modal Customization */
+.modal-content {
+  border-radius: 16px;
+  border: none;
+  background: #F2FDFF;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: #050F2A;
+  font-weight: 600;
+}
+/*body {
     background: #f9fafc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -32,4 +113,4 @@ h1, h2 {
 .btn-custom:hover {
     background: linear-gradient(45deg, #0062cc, #00a2d3);
     transform: translateY(-2px);
-}
+}*/

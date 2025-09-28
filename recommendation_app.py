@@ -92,5 +92,5 @@ def recommend_internships(user: UserInfo = Body(...)):
     qry_emb = sentence_model.encode([qry])
     sims = cosine_similarity(qry_emb, internship_embeddings)[0]
     top_indices = np.argsort(sims)[::-1][:8]  
-    recommendations = [internship_offers[i] for i in top_indices if sims[i] > 0.2]  
+    recommendations = [internship_offers[i] for i in top_indices if sims[i] > 0.4]  
     return recommendations[:8] 
